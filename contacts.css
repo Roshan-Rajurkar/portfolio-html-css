@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0e1631;}
+
+.top {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top header h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.top header p {
+    text-align: center;
+    margin-top: 7px;
+    color: rgb(152, 152, 152);
+}
+
+.container {
+    width: 80%;
+    height: 480px;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+}
+
+.left-side {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(90, 45, 202);
+    padding: 20px 30px;
+    border-radius: 13px;
+    color: #fff;
+}
+
+.left-side h2 {
+    padding: 10px 0px;
+}
+
+.left-side .contact-ways {
+    margin-top: 50px;
+}
+
+.left-side .contact-ways>div {
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.left-side .contact-ways>div img {
+    width: 17px;
+    margin-right: 20px;
+}
+
+.left-side .contact-ways>div span {
+    color: rgb(243, 243, 243);
+}
+
+.left-side .social-media {
+    position: absolute;
+    bottom: 50px;
+}
+
+.left-side .social-media a {
+    margin-right: 17px;
+}
+
+.left-side .social-media img {
+    width: 15px;
+    filter: drop-shadow(2px 2px 0 black);
+}
+
+.left-side .social-media img:hover {
+    transform: scale(1.3);
+    transition: 0.4s all;
+    filter: drop-shadow(5px 5px 0 black);
+}
+
+
+.left-side p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: .7;
+}
+
+.right-side {
+    width: 65%;
+    height: 100%;
+    padding: 25px 25px;
+    border-radius: 13px;
+    background-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right-side label {
+    font-size: 13px;
+}
+
+.right-side .inp{
+    width: 45%;
+}
+
+.right-side .inputs-name,
+.inputs-ways {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+
+.right-side input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(122, 121, 121);
+    font-size: 12px;
+    font-weight: 500;
+    border-bottom: 1.5px solid rgb(215, 215, 215);
+}
+
+.right-side .choice-box {
+    margin-bottom: 20px;
+}
+
+.right-side .choice-box p {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.right-side .choice-box .choices input {
+    margin-left: 23px;
+    margin-right: 5px;
+}
+
+.right-side .choice-box .choices span {
+    color: rgb(212, 194, 194);
+}
+
+.right-side .choice-box .choices span:hover {
+    color: rgb(121, 119, 119);
+}
+
+.right-side .write-message{
+    padding: 15px 0px;
+}
+.right-side .write-message label {
+    font-size: 13px;
+}
+
+.right-side .write-message textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1.5px solid rgb(215, 215, 215);
+    resize: none;
+    padding-top: 15px;
+}
+
+
+.right-side button {
+    margin-top: 20px;
+    padding: 12px 27px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgb(90, 45, 202);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+
+.right-side button:hover {
+    background-color: rgb(76, 24, 207);
+    transform: scale(1.1);
+    transition: 0.2s all;
+}
+
+#call{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.popup{
+    width: 400px;
+    background: #c8daff;
+    border-radius: 6px;
+    position: absolute;
+    top 0 means popup will present at top of the web page
+    top: 0; 
+    left: 50%;
+    scale() to reduce size initially it is 0.1 very small
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding:0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup p{
+    margin-top: 20px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #3ba415;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+*/

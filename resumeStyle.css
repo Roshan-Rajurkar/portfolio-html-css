@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0e1631;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-resume img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
+    margin-bottom: 20px;
+}
+
+.download-resume a {
+    padding: 10px 35px;
+    text-decoration: none;
+    background-color: rgb(74, 74, 222);
+    border-radius: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: .5s all;
+}
+
+.download-resume a:hover {
+    font-weight: bolder;
+    transform: scale(1.1);
+    color: #fff;
+    background-color: rgb(50, 50, 108);
+}
